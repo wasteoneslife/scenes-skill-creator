@@ -1,5 +1,5 @@
 /**
- * Client half of @cloudplugin/dsh-skill-creator — the creator run console.
+ * Client half of @cloudplugin/scenes-skill-creator — the creator run console.
  *
  * The panel does NOT generate skills and does NOT hand you a prompt to copy: pressing
  * 「开始创建」 asks the Host half to run the official creator (huawei-cloud-skill-creator /
@@ -14,7 +14,7 @@
  * call here is a plain relative fetch — no port, no CORS.
  */
 window.__ModuleLoader__.load({
-  id: '@cloudplugin/dsh-skill-creator',
+  id: '@cloudplugin/scenes-skill-creator',
   factory(require) {
     const React = require('react');
     const h = React.createElement;

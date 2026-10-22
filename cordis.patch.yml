@@ -1,4 +1,4 @@
-# @cloudplugin/dsh-skill-creator — bundle patch (inserted rows)
+# @cloudplugin/scenes-skill-creator — bundle patch (inserted rows)
 # All in-process; there is no child engine and no listening port:
 #   Host  : registers the official creator skills (ctx.skills.registerProvider) and the
 #           panel API (ctx.webServer), and runs the creation flow by driving an agent
@@ -9,7 +9,7 @@
 #           composer card". (browser module id = package name, dsh.client.platform=web)
 - insert:
     - id: dsh-skill-creator
-      name: '@cloudplugin/dsh-skill-creator'
+      name: '@cloudplugin/scenes-skill-creator'
       config:
         # Creator delegation: the two official creators are fetched from these repos and
         # registered as loadable skills. Cache/TTL via env

@@ -1,6 +1,6 @@
 # Scenes Skill Creator 使用说明
 
-> 版本：`@cloudplugin/dsh-skill-creator` 0.0.3
+> 版本：`@cloudplugin/scenes-skill-creator` 0.0.3
 > 适用平台：DeepSeek Harness（DSH）Cordis bundle 插件（Host + Client 两半）
 > 文档语言：简体中文
 
@@ -26,8 +26,8 @@ Scenes Skill Creator 是一个 DSH 插件：你在面板里用表单描述需求
 
 | 项目 | 值 |
 | --- | --- |
-| 包名 | `@cloudplugin/dsh-skill-creator` |
-| 版本 | `0.0.3`（已发布到 npm） |
+| 包名 | `@cloudplugin/scenes-skill-creator`（曾用名 `@cloudplugin/dsh-skill-creator`） |
+| 版本 | `0.0.3` |
 | 显示标题 | **Scenes Skill Creator** |
 | 仓库 | https://github.com/wasteoneslife/dsh-skill-creator |
 | 形态 | DSH Cordis bundle，Host + Client 两半 |
@@ -43,18 +43,18 @@ Scenes Skill Creator 是一个 DSH 插件：你在面板里用表单描述需求
 ### 安装
 
 ```
-dsh plugin add @cloudplugin/dsh-skill-creator
+dsh plugin add @cloudplugin/scenes-skill-creator
 ```
 
 桌面端需要先**完全退出** DSH，并指定 desktop profile：
 
 ```
-dsh plugin --profile desktop add @cloudplugin/dsh-skill-creator
+dsh plugin --profile desktop add @cloudplugin/scenes-skill-creator
 ```
 
 **安装完成后必须重启一次 DSH。**
 
-> 命名沿革：包名一度改为 `@cloudplugin/scenes-skill-creator`（发布过 0.0.2），随后回退为 `@cloudplugin/dsh-skill-creator`（当前，自 0.0.3 起）；**显示标题始终是 Scenes Skill Creator**。`@cloudplugin/scenes-skill-creator` 已在 npm 标记弃用并指向本包名。
+> 命名沿革：包名最初是 `@cloudplugin/dsh-skill-creator`；中途一度改为 `@cloudplugin/scenes-skill-creator` 并发布过 `0.0.2`；随后回退为 `@cloudplugin/dsh-skill-creator`（该线发布到 `0.0.4`，期间 npm 上的 `@cloudplugin/scenes-skill-creator@0.0.2` 被标记为弃用并指向旧名）；**现在正式采用 `@cloudplugin/scenes-skill-creator`**（版本线自 `0.0.3` 起）。**显示标题始终是 Scenes Skill Creator**——标题来自 `locale/{zh,en}.json` 的 `meta.title`，与包名解耦。
 
 ### 代码结构
 
@@ -239,7 +239,7 @@ Client 侧：`src/client.js`，通过 `window.__ModuleLoader__.load({ id })` 注
 
 ```
 # 桌面端：先完全退出 DSH
-dsh plugin --profile desktop add @cloudplugin/dsh-skill-creator
+dsh plugin --profile desktop add @cloudplugin/scenes-skill-creator
 # 然后重启一次 DSH
 ```
 
@@ -270,6 +270,6 @@ dsh plugin --profile desktop add @cloudplugin/dsh-skill-creator
 
 ## 版本沿革与命名说明
 
-- 包名：`@cloudplugin/dsh-skill-creator`（当前，npm 上最新为 `0.0.3`）
+- 包名：`@cloudplugin/scenes-skill-creator`（当前，本版本 `0.0.3`；曾用名 `@cloudplugin/dsh-skill-creator`）
 - 显示标题：**Scenes Skill Creator**（来自 `locale/{zh,en}.json` 的 `meta.title`，与包名解耦）
-- 历史上曾一度把包名改为 `@cloudplugin/scenes-skill-creator` 并发布过 `0.0.2`；随后**包名回退**为 `@cloudplugin/dsh-skill-creator`（新版本从 `0.0.3` 起），**显示标题始终是 Scenes Skill Creator**。`@cloudplugin/scenes-skill-creator` 已在 npm 上标记为弃用并指向本包名。
+- 命名沿革：包名最初是 `@cloudplugin/dsh-skill-creator`；中途一度改为 `@cloudplugin/scenes-skill-creator` 并发布过 `0.0.2`；随后回退为 `@cloudplugin/dsh-skill-creator`（该线发布到 `0.0.4`）；**现在正式采用 `@cloudplugin/scenes-skill-creator`**（版本线自 `0.0.3` 起）。**显示标题始终是 Scenes Skill Creator**。GitHub 仓库名 `dsh-skill-creator`、HTTP 前缀 `/dsh-skill-creator/api`、补丁 `id`、缓存目录 `dsh-skill-creator-cache` 与环境变量 `DSH_SKILL_CREATOR_CACHE` **均属有意保留的对外契约，不随包名改**。

@@ -1,6 +1,6 @@
 # Scenes Skill Creator 开发历程
 
-> 对应版本：`@cloudplugin/dsh-skill-creator` 0.0.3
+> 对应版本：`@cloudplugin/scenes-skill-creator` 0.0.3
 > 文档语言：简体中文
 
 ## 1. 目的与范围
@@ -119,7 +119,7 @@
 
 补齐了 `LICENSE` / `locale` / `icon`。
 
-npm 版本线：**0.0.1 → 0.0.2 → 包名一度改为 `@cloudplugin/scenes-skill-creator` 并发布 0.0.2 → 回退为 `@cloudplugin/dsh-skill-creator`（自 0.0.3 起）**。
+npm 版本线：**0.0.1 → 0.0.2 → 包名一度改为 `@cloudplugin/scenes-skill-creator` 并发布 0.0.2 → 回退为 `@cloudplugin/dsh-skill-creator`（该线发布到 0.0.4）→ 正式采用 `@cloudplugin/scenes-skill-creator`（自 0.0.3 起）**。
 
 仓库侧：GitHub 仓库 + `dsh-plugin` topic；向 awesome-dsh-plugin 提交 **PR #7456**。
 
@@ -159,7 +159,7 @@ npm 版本线：**0.0.1 → 0.0.2 → 包名一度改为 `@cloudplugin/scenes-sk
 
 ## 13. 现状
 
-- 版本：`@cloudplugin/dsh-skill-creator@0.0.3`（npm 已发布 0.0.2，0.0.3（已发布）；显示标题 Scenes Skill Creator）。
+- 版本：`@cloudplugin/scenes-skill-creator@0.0.3`（曾用名 `@cloudplugin/dsh-skill-creator`，该线发布到 0.0.4；显示标题 Scenes Skill Creator）。
 - 测试：**162 项全绿**。
 - 三种模式端到端实跑通过，均**首轮 10/10 达标、零提问、零错误**：`huawei-cloud-mrs-manage`（华为云）、`markdown-notes-index`（通用技能）、`jsonplaceholder-posts`（标准API）。
 - 侧边栏菜单每项为两行：显示名 + 说明小字（`common-skill-dev` / `common-restapi-skill-dev` / `huawei-skill`）。

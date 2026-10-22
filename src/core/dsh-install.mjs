@@ -17,7 +17,7 @@ import path from 'node:path';
 import os from 'node:os';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
-const SELF_NAME = '@cloudplugin/dsh-skill-creator';
+const SELF_NAME = '@cloudplugin/scenes-skill-creator';
 const SELF_DIR = fileURLToPath(new URL('../..', import.meta.url)); // package root
 
 function findDshHome(cli) {
@@ -65,7 +65,7 @@ export function installBundles(dshHome, { copy = true } = {}) {
   if (!profiles.length) return { installed: false, dshHome, reason: `no dsh profiles under ${dshHome}/profiles` };
   const results = [];
   for (const prof of profiles) {
-    const target = path.join(prof.dir, 'node_modules', '@cloudplugin', 'dsh-skill-creator');
+    const target = path.join(prof.dir, 'node_modules', '@cloudplugin', 'scenes-skill-creator');
     let status = 'ok';
     if (copy) {
       try { if (fs.lstatSync(target).isSymbolicLink()) fs.rmSync(target, { force: true }); } catch { /* absent */ }

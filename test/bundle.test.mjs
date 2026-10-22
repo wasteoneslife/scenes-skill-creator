@@ -13,7 +13,7 @@ describe('DSH bundle contract (cordis-plugin-development)', () => {
     const pkg = readPkg();
     assert.ok(pkg.dsh.bundle.patch, 'dsh.bundle.patch missing');
     assert.ok(fs.existsSync(path.join(ROOT, pkg.dsh.bundle.patch)), 'patch file missing');
-    assert.equal(pkg.name, '@cloudplugin/dsh-skill-creator');
+    assert.equal(pkg.name, '@cloudplugin/scenes-skill-creator');
   });
 
   test('dsh.client declares web platform + conversation inject (composer dock owner)', () => {

@@ -1,5 +1,5 @@
 /**
- * Host half of @cloudplugin/dsh-skill-creator.
+ * Host half of @cloudplugin/scenes-skill-creator.
  *
  * Three jobs, all in-process (no child engine, no port, no CORS):
  *  1. Publish the official creator skills (ctx.skills.registerProvider) so `skill(...)`

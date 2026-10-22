@@ -2,10 +2,10 @@
 
 **在 DeepSeek Harness 的 Web 界面里真跑官方 creator 技能——通用技能 / 标准API管理技能 / 华为云基础云服务技能——并实时展示过程、自动评测、不达标就打回修改。**
 
-[![npm version](https://img.shields.io/npm/v/@cloudplugin/dsh-skill-creator.svg)](https://www.npmjs.com/package/@cloudplugin/dsh-skill-creator)
-[![license: MIT](https://img.shields.io/npm/l/@cloudplugin/dsh-skill-creator.svg)](https://github.com/wasteoneslife/dsh-skill-creator/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/@cloudplugin/scenes-skill-creator.svg)](https://www.npmjs.com/package/@cloudplugin/scenes-skill-creator)
+[![license: MIT](https://img.shields.io/npm/l/@cloudplugin/scenes-skill-creator.svg)](https://github.com/wasteoneslife/dsh-skill-creator/blob/main/LICENSE)
 
-包名 `@cloudplugin/dsh-skill-creator`，是一个 DSH bundle（Host 半边 + Client 半边，全部在 Harness 进程内，没有子进程、没有监听端口）。
+包名 `@cloudplugin/scenes-skill-creator`（曾用名 `@cloudplugin/dsh-skill-creator`；GitHub 仓库名与 HTTP 前缀等对外契约不随包名改），是一个 DSH bundle（Host 半边 + Client 半边，全部在 Harness 进程内，没有子进程、没有监听端口）。
 
 ## 它是什么
 
@@ -36,30 +36,30 @@
 **方式一 · DSH 内（任意 profile，推荐）**：在会话里让 agent 用 Harness 自带的插件管理安装这个 spec：
 
 ```text
-@cloudplugin/dsh-skill-creator
+@cloudplugin/scenes-skill-creator
 ```
 
 **方式二 · 桌面端 profile（命令行）**：把**同一个包名**同时写进该 profile 的依赖与 `dsh.profile.bundles`（两处都要有）：
 
 ```sh
 cd ~/.dsh/profiles/desktop
-pnpm add @cloudplugin/dsh-skill-creator   # 或用 npm install
+pnpm add @cloudplugin/scenes-skill-creator   # 或用 npm install
 ```
 
 ```powershell
 cd $env:USERPROFILE\.dsh\profiles\desktop
-pnpm add @cloudplugin/dsh-skill-creator   # 或用 npm install
+pnpm add @cloudplugin/scenes-skill-creator   # 或用 npm install
 ```
 
 > **⚠️ 装完必须重启 DSH 一次**（包与配置在启动时加载）。
 >
-> 另外，安装用的包名必须与 `src/client.js` 里 `window.__ModuleLoader__.load({ id })` 的 id 完全一致（本包都是 `@cloudplugin/dsh-skill-creator`），不一致时浏览器侧会直接报 `bundle … loaded without registering "…"`。
+> 另外，安装用的包名必须与 `src/client.js` 里 `window.__ModuleLoader__.load({ id })` 的 id 完全一致（本包都是 `@cloudplugin/scenes-skill-creator`），不一致时浏览器侧会直接报 `bundle … loaded without registering "…"`。
 
 最小可用配置（写进 profile 的 `cordis.patch.yml`，`id` 与包内补丁一致）：
 
 ```yaml
 - id: dsh-skill-creator
-  name: '@cloudplugin/dsh-skill-creator'
+  name: '@cloudplugin/scenes-skill-creator'
   config:
     run:
       cwd: '/absolute/path/to/your/workspace'
@@ -78,13 +78,13 @@ pnpm add @cloudplugin/dsh-skill-creator   # 或用 npm install
 
 ```sh
 # Web / 普通 profile
-dsh plugin add @cloudplugin/dsh-skill-creator
+dsh plugin add @cloudplugin/scenes-skill-creator
 
 # 桌面端：先完全退出客户端，再指定 desktop profile
-dsh plugin --profile desktop add @cloudplugin/dsh-skill-creator
+dsh plugin --profile desktop add @cloudplugin/scenes-skill-creator
 ```
 
-装完**重启一次 DSH**。桌面端的 `dsh` CLI 随安装包提供（`resources\runtime\cli\bin\dsh.cmd`）；若手边没有该命令，也可以在插件页里直接填包名 `@cloudplugin/dsh-skill-creator` 安装。
+装完**重启一次 DSH**。桌面端的 `dsh` CLI 随安装包提供（`resources\runtime\cli\bin\dsh.cmd`）；若手边没有该命令，也可以在插件页里直接填包名 `@cloudplugin/scenes-skill-creator` 安装。
 
 ## ⚠️ 权限要求（必读）
 
@@ -315,5 +315,5 @@ node bin/dsh-skill-validate.mjs <skill-dir> [--mode huawei|generic] [--edit]
 
 - **License**：MIT（见 `package.json` 的 `license` 与仓库 `LICENSE`）
 - **仓库**：https://github.com/wasteoneslife/dsh-skill-creator
-- **npm**：https://www.npmjs.com/package/@cloudplugin/dsh-skill-creator
+- **npm**：https://www.npmjs.com/package/@cloudplugin/scenes-skill-creator
 - **Issues**：https://github.com/wasteoneslife/dsh-skill-creator/issues
