@@ -3,7 +3,7 @@
 **在 DeepSeek Harness 的 Web 界面里真跑官方 creator 技能——通用技能 / 标准API管理技能 / 华为云基础云服务技能——并实时展示过程、自动评测、不达标就打回修改。**
 
 [![npm version](https://img.shields.io/npm/v/@cloudplugin/scenes-skill-creator.svg)](https://www.npmjs.com/package/@cloudplugin/scenes-skill-creator)
-[![license: MIT](https://img.shields.io/npm/l/@cloudplugin/scenes-skill-creator.svg)](https://github.com/wasteoneslife/dsh-skill-creator/blob/main/LICENSE)
+[![license: MIT](https://img.shields.io/npm/l/@cloudplugin/scenes-skill-creator.svg)](https://github.com/wasteoneslife/scenes-skill-creator/blob/main/LICENSE)
 
 包名 `@cloudplugin/scenes-skill-creator`（曾用名 `@cloudplugin/dsh-skill-creator`；GitHub 仓库名与 HTTP 前缀等对外契约不随包名改），是一个 DSH bundle（Host 半边 + Client 半边，全部在 Harness 进程内，没有子进程、没有监听端口）。
 
@@ -314,6 +314,6 @@ node bin/dsh-skill-validate.mjs <skill-dir> [--mode huawei|generic] [--edit]
 ## 许可与链接
 
 - **License**：MIT（见 `package.json` 的 `license` 与仓库 `LICENSE`）
-- **仓库**：https://github.com/wasteoneslife/dsh-skill-creator
+- **仓库**：https://github.com/wasteoneslife/scenes-skill-creator
 - **npm**：https://www.npmjs.com/package/@cloudplugin/scenes-skill-creator
-- **Issues**：https://github.com/wasteoneslife/dsh-skill-creator/issues
+- **Issues**：https://github.com/wasteoneslife/scenes-skill-creator/issues

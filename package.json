@@ -1,6 +1,6 @@
 {
   "name": "@cloudplugin/scenes-skill-creator",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "DeepSeek Harness plugin (bundle): visually create spec-compliant skills — Huawei Cloud mode per 《华为云基础云服务Skills和仓库管理规范》 / generic mode per agentskills.io",
   "license": "MIT",
   "icon": "./icon.svg",
@@ -51,10 +51,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wasteoneslife/dsh-skill-creator.git"
+    "url": "git+https://github.com/wasteoneslife/scenes-skill-creator.git"
   },
-  "homepage": "https://github.com/wasteoneslife/dsh-skill-creator#readme",
+  "homepage": "https://github.com/wasteoneslife/scenes-skill-creator#readme",
   "bugs": {
-    "url": "https://github.com/wasteoneslife/dsh-skill-creator/issues"
+    "url": "https://github.com/wasteoneslife/scenes-skill-creator/issues"
   }
 }

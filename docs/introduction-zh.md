@@ -29,7 +29,7 @@ Scenes Skill Creator 是一个 DSH 插件：你在面板里用表单描述需求
 | 包名 | `@cloudplugin/scenes-skill-creator`（曾用名 `@cloudplugin/dsh-skill-creator`） |
 | 版本 | `0.0.3` |
 | 显示标题 | **Scenes Skill Creator** |
-| 仓库 | https://github.com/wasteoneslife/dsh-skill-creator |
+| 仓库 | https://github.com/wasteoneslife/scenes-skill-creator |
 | 形态 | DSH Cordis bundle，Host + Client 两半 |
 | bundle 声明 | `dsh.bundle.patch` → `cordis.patch.yml` |
 
